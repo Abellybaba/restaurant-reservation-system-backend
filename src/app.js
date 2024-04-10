@@ -14,6 +14,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 dotenv.config();
 const cors = require("cors");
+const uri = process.env.MONGODB_URI;
 
 mongoose
   .connect(
